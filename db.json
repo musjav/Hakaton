@@ -1,0 +1,63 @@
+{
+  "branches": [
+    {
+      "id": 1,
+      "name": "Karachi - Saddar",
+      "location": "Saddar, Karachi",
+      "managerId": "branch001",
+      "password": "pass123",
+      "inventory": {
+        "chicken": 100,
+        "beef": 50
+      },
+      "employees": [
+        {
+          "id": 1,
+          "name": "Ali",
+          "contact": "03000000000",
+          "email": "ali@example.com"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "user": "user1@example.com",
+          "text": "Great service!"
+        }
+      ]
+    },
+    {
+      "name": "gulshan",
+      "location": "Gulshan-e-iqbal block 1",
+      "phone": "+9212341234",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Chicken Biryani",
+      "price": 800
+    },
+    {
+      "id": 2,
+      "name": "Beef Burger",
+      "price": 450
+    },
+    {
+      "name": "mutton",
+      "price": "200",
+      "category": "meat",
+      "id": 3
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "name": "Summer Sale",
+      "discountPercent": 10,
+      "active": true
+    }
+  ],
+  "orders": []
+}
