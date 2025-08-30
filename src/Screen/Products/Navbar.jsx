@@ -4,7 +4,6 @@ import { FaShoppingCart, FaUserCircle, FaStar, FaSignOutAlt, FaBars, FaTimes } f
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../../Store/Slices/LoginSignUp";
 import { useState } from "react";
-
 const Navbar = () => {
   const { cart } = useCart();
   const totalItems = cart.reduce((acc, item) => acc + (item.qty || 1), 0);

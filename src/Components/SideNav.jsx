@@ -3,7 +3,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../Store/Slices/LoginSignUp";
 import { useDispatch } from "react-redux";
-
+import logo from '../../src/assets/logo.png'
 // // // ======================== when you connect login signup =======================
 // import { logoutUser } from '../Store/Slices/LoginSignUp'
 // import { useDispatch } from "react-redux";
@@ -238,6 +238,7 @@ const SideNav = () => {
 
           <Link to={"/"} className="flex ms-2 md:me-24 items-center">
             <img
+            src={logo}
               className="h-12 w-12 rounded-full me-3 object-cover"
               alt="Logo"
             />

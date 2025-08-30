@@ -21,16 +21,16 @@ const ProductsList = () => {
 
   const { removeFromCartByProductId } = useCart();
   return (
-  <div className="bg-black h-1000">
+  <div className="bg-black h-1000 ">
 
 
          <Navbar />
          <OfferList/>
-      <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 h-screen overflow-y-auto">
+      <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 h-screen ">
         {products.map(product => (
           <div
             key={product.id}
-            className="bg-black/70 backdrop-blur-lg rounded-2xl shadow-lg border border-yellow-800/40 p-4 flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-yellow-600"
+            className="bg-black/70 backdrop-blur-lg rounded-2xl shadow-lg border border-yellow-800/90 p-4 flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-yellow-600"
           >
             <img
               src="https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg?semt=ais_hybrid&w=740"

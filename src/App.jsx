@@ -23,7 +23,7 @@ function App() {
   return (
     <CartProvider>
 
-     
+
 
       <Routes>
         {/* Login/Signup */}
@@ -53,8 +53,16 @@ function App() {
         </Route>
 
         {/* Branch Manager Routes */}
-        <Route element={<RoleProtectedRoute allowedRoles={['branch-manager']} />}>
-          <Route path="/branch-manager-dashboard" element={<BM />} />
+        <Route element={<RoleProtectedRoute allowedRoles={['branchmanagerdashboard']} />}>
+          <Route path="/branchmanagerdashboard" element={<BM />} />
+          <Route path="/managerregistration/:type" element={<RegistrationForm />} />
+          <Route path="/managerlist/:type" element={<DynamicListJson />} />
+          <Route path="/manageredit/:type/:id" element={<EditItemJson />} />
+          <Route path="/managershowreviews" element={<ShowReviews />} />
+
+
+
+
         </Route>
       </Routes>
 

@@ -11,7 +11,7 @@ const OrderConfirmed = () => {
           <li key={idx}>{item.productTitle} - ${item.price}</li>
         ))}
       </ul>
-      <p className="mt-2 font-bold">Total: ${order.total}</p>
+      <p className="mt-2 font-bold">Total: ${order.totalPrice}</p>
     </div>
   );
 };

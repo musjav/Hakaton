@@ -184,8 +184,8 @@ const Login = () => {
       if (user.role === "admin") {
         navigate("/admin-dashboard");
       }
-      else if (user.role === "branch-manager-dashboard") {
-        navigate("/branch-manager-dashboard");
+      else if (user.role === "branchmanagerdashboard") {
+        navigate("/branchmanagerdashboard");
       }
       
       else {
@@ -205,8 +205,8 @@ const Login = () => {
     //             if (user.role === "admin") {
     //                 navigate("/admin-dashboard");
     //             } 
-    //             if (user.role === "branch-manager-dashboard") {
-    //                 navigate("/branch-manager-dashboard");
+    //             if (user.role === "branchmanagerdashboard") {
+    //                 navigate("/branchmanagerdashboard");
     //             } 
     //             else {
     //                 navigate("/");
@@ -221,7 +221,7 @@ const Login = () => {
       .unwrap()
       .then((user) => {
         if (user.role === "admin") navigate("/admin-dashboard");
-        else if (user.role === "branch-manager-dashboard") navigate("/branch-manager-dashboard");
+        else if (user.role === "branchmanagerdashboard") navigate("/branchmanagerdashboard");
         else navigate("/");
       })
       .catch((err) => console.error("Google login failed:", err));
@@ -246,7 +246,7 @@ const Login = () => {
       Login as Admin
     </Link>
     <Link
-      to="/login/branch-manager-dashboard"
+      to="/login/branchmanagerdashboard"
       className="hover:text-yellow-400 transition duration-300"
     >
       Login as Manager
@@ -339,9 +339,9 @@ const Login = () => {
   {/* Debug / Links */}
 {/* <div className="ml-6 flex flex-col space-y-3 text-yellow-300"> 
     <Link to="/login/admin" className="hover:text-yellow-400 transition duration-300">Login as Admin</Link>
-    <Link to="/login/branch-manager-dashboard" className="hover:text-yellow-400 transition duration-300">Login as BM</Link>
+    <Link to="/login/branchmanagerdashboard" className="hover:text-yellow-400 transition duration-300">Login as BM</Link>
     <Link to="/signup/admin" className="hover:text-yellow-400 transition duration-300">Signup as Admin</Link>
-    <Link to="/signup/branch-manager-dashboard" className="hover:text-yellow-400 transition duration-300">Signup as BM</Link>
+    <Link to="/signup/branchmanagerdashboard" className="hover:text-yellow-400 transition duration-300">Signup as BM</Link>
   </div>  */}
 </div>
 </>

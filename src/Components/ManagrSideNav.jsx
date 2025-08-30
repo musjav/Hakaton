@@ -87,7 +87,7 @@ const ManagerSideNav = () => {
       </svg>
     ),
     submenu: [
-      { label: "Product List", to: "/list/products" },
+      { label: "Product List", to: "/managerlist/products" },
     ],
   },
   {
@@ -103,8 +103,8 @@ const ManagerSideNav = () => {
       </svg>
     ),
     submenu: [
-      { label: "View Stock", to: "/list/stock" },
-      { label: "Add Stock", to: "/registration/stock" },
+      { label: "View Stock", to: "/managerlist/stock" },
+      { label: "Add Stock", to: "/managerregistration/stock" },
     ],
   },
   {
@@ -120,8 +120,8 @@ const ManagerSideNav = () => {
       </svg>
     ),
     submenu: [
-      { label: "View Employees", to: "/list/employees" },
-      { label: "Add Employees", to: "/registration/employees" },
+      { label: "View Employees", to: "/managerlist/employees" },
+      { label: "Add Employees", to: "/managerregistration/employees" },
 
     ],
   },
@@ -138,7 +138,7 @@ const ManagerSideNav = () => {
       </svg>
     ),
     submenu: [
-      { label: "View Customer Reviews", to: "/showreviews" },    
+      { label: "View Customer Reviews", to: "/managershowreviews" },    
     ],
   },
   
